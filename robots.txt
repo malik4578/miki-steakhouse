@@ -1,0 +1,7 @@
+# Robots.txt pour Miki SteakHouse
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://www.aremplacer.com/sitemap.xml

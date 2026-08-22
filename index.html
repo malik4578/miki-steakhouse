@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miki SteakHouse - Restaurant de Grillades à Château Renard</title>
+    <meta property="og:locale" content="fr_FR">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Miki SteakHouse - Restaurant de grillades premium à Château Renard (45). Viandes maturées Wagyu, burgers artisanaux et plats fait maison. Ouvert lundi-samedi 11h-22h, dimanche 11h-21h.">
+    <meta name="keywords" content="steakhouse Château Renard, restaurant grillades, Wagyu, burgers premium, viandes maturées">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="fr">
+    <meta name="author" content="Miki SteakHouse">
+    <link rel="canonical" href="https://www.aremplacer.com">
+
+    <!-- Open Graph Tags (Facebook, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Miki SteakHouse - Restaurant de Grillades à Château Renard">
+    <meta property="og:description" content="Découvrez nos délicieuses grillades premium, burgers artisanaux et viandes Wagyu, entrecôtes maturées.">
+    <meta property="og:url" content="https://www.aremplacer.com">
+    <meta property="og:image" content="https://www.aremplacer.com/images/mikilogo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Miki SteakHouse - Restaurant de Grillades">
+    <meta name="twitter:description" content="Viandes maturées Wagyu et burgers premium à Château Renard">
+    <meta name="twitter:image" content="https://www.aremplacer.com/images/mikilogo.png">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Miki SteakHouse",
+      "image": "https://www.aremplacer.com/images/mikilogo.png",
+      "description": "Restaurant de grillades premium à Château Renard",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4 Rue du Vieux Marché",
+        "addressLocality": "Château Renard",
+        "postalCode": "45220",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33766600504",
+      "url": "https://www.aremplacer.com",
+      "priceRange": "€€",
+      "servesCuisine": "Grillades, Burgers, Viande Maturée",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "21:00"
+        }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.93104970482577",
+        "longitude": "2.927865729443639"
+      },
+      "sameAs": ["https://www.facebook.com/p/Miki-Steakhouse-100083218486421/"]
+    }
+    </script>
+
+    <!-- fichier styles index js leafleet favicon -->
+     <link rel="icon" type="image/png" href="images/mikilogo.png">
+    <link rel="apple-touch-icon" href="images/mikilogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <p class="gold"><img src="images/mikilogorogner.png" alt="logo miki steakhouse"> <br> Miki SteakHouse</p>
+        </div>
+        <nav class="nav-menu">
+            <a href="#accueil" class="gold">ACCUEIL</a>
+            <a href="#menu" class="gold">MENU</a>
+            <a href="#contact" class="gold">NOUS CONTACTER</a>
+        </nav>
+        <!-- Menu Burger -->
+        <div class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION ACCUEIL -->
+        <section class="accueil" id="accueil">
+            <div class="accueil-content">
+                <p class="accueil-subtitle">BIENVENUE CHEZ</p>
+                <h1>Miki SteakHouse - Restaurant de Grillades Premium à Château Renard</h1>
+                <div class="separator">
+                    <span>————</span>
+                    <span>✕</span>
+                    <span>————</span>
+                </div>
+                <p class="accueil-description">
+                    Une cuisine faite maison à partir de produits frais et locaux, pour vous offrir une expérience unique et savoureuse.
+                </p>
+                <div class="accueil-buttons">
+                    <a href="#menu" class="btn btn-primary">DÉCOUVRIR LE MENU</a>
+                </div>
+            </div>
+            
+                <img src="images/mikilogorogner.png" alt="Steack House" class="accueil-image">
+            
+        </section>
+
+        <!-- SECTION MENU -->
+        <section class="menu-section" id="menu">
+            <p class="section-label">NOTRE MENU</p>
+            <h2>Des plats préparés avec passion</h2>
+            <div class="separator">
+                <span>————</span>
+                <span>✕</span>
+                <span>————</span>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3 class="gold">ENTRÉES</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span>Burrata</span>
+                            <span>9.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Carpaccio de bœuf <br>(supplement burrata 3€)</span>
+                            <span>9.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Existe en plat</span>
+                            <span>21.90€</span>
+                        </div>
+                    </div>
+                    <h3 class="gold">Desserts</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span>Crème brûlée</span>
+                            <span>5.00€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Baba au rhum</span>
+                            <span>8.50€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Tarte au daim</span>
+                            <span>5.00€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Coupe glacée du chef</span>
+                            <span>8.50€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Coupe glacée colonel</span>
+                            <span>8.50€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Coupe glacée iceberg</span>
+                            <span>8.50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="gold">GRILLADES</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span>Côte de bœuf (1kg200)</span>
+                            <span>49.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Entrecôte (450g)</span>
+                            <span>23.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Faux-filet (300g)</span>
+                            <span>19.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Filet de bœuf (200g)</span>
+                            <span>19.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Brochette de bœuf</span>
+                            <span>17.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Cotelette d'agneau</span>
+                            <span>17.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Assiette 4 viandes</span>
+                            <span>19.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Assiette de poulet</span>
+                            <span>13.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Assiette merguez</span>
+                            <span>13.90€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <!-- <img src="images/plats.jpg" alt="Plats"> -->
+                    <h3 class="gold">BURGERS</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span>Le 180 (steak 180g, cheddar, crudités)</span>
+                            <span>12.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Le chicken</span>
+                            <span>12.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Le fish</span>
+                            <span>12.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Le veggie</span>
+                            <span>12.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Le burger du chef</span>
+                            <span>15.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Le chévre miel</span>
+                            <span>15.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Le burger du moment</span>
+                            <span>16.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Le miki (steak 180g, galette de p.d.t., poulet, crudités, cheddar)</span>
+                            <span>19.90€</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="gold">Nos Viandes PREMIUM</h2>
+
+            <div>
+                <div class="menu-items taille">
+                        <div class="menu-item">
+                            <span class="text-imp">Merguez Wagyu 2pieces <br> Championne d'europe</span>
+                            <span>19.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="text-imp">Faux-Filet Wagyu (160g)</span>
+                            <span>29.90€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="text-imp">Côte de Boeuf maturée<br> (1kg100) Min 21jours</span>
+                            <span>7.90€ <br> Les 100G</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="text-imp">Entrecôte maturée (450g) Min 21jours</span>
+                            <span>10.90€ Les 100G</span>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="contact-info">
+                <p class="section-label">NOUS CONTACTER</p>
+                <h2>Nous serons ravis de vous accueillir</h2>
+                <div class="separator">
+                    <span>————</span>
+                    <span>✕</span>
+                    <span>————</span>
+                </div>
+
+                <div class="info-details">
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <a href="https://www.google.com/maps/place/4+Rue+du+Vieux+March%C3%A9,+45220+Ch%C3%A2teau-Renard/@47.930897,2.9254718,17z/data=!3m1!4b1!4m6!3m5!1s0x47ef9b18926c8b99:0xf44936d17b6ebb19!8m2!3d47.9308934!4d2.9280467!16s%2Fg%2F11c1j93bgz?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D">4 Rue du Vieux Marché 45220 Château Renard</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <p>07.66.60.05.04</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">⏰</span>
+                        <p>Ouvert tous les jours du lundi au samedi<br>11h00 - 22h00 <br> le dimanche<br>11h00 - 21h00</p>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="contact-map"></div>
+            
+
+            <!-- <form class="contact-form">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <input type="text" placeholder="Sujet" required>
+                <textarea placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-submit">ENVOYER LE MESSAGE</button>
+            </form> -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p class="logo"> Miki SteakHouse</p>
+            <p class="copyright">© 2022 Miki SteakHouse. Tous droits réservés.</p>
+            <!-- <p class="credits">Site créé par <a href="#">AÏDROUS Malik</a></p> -->
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/p/Miki-Steakhouse-100083218486421/" target="_blank" class="social-icon">f</a>
+            <!-- <a href="#" class="social-icon">📷</a> -->
+            <!-- <a href="#" class="social-icon">▶️</a> -->
+        </div>
+    </footer>
+</body>
+</html>
