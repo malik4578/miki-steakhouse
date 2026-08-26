@@ -1,7 +1,7 @@
 :root {
     --bglogo: #000000;
-    --gold: #D4A72C;
-    --gold-light: #E6B94A;
+    --gold: #b21a1a;
+    --gold-light: #b21a1a;
     --bg-dark: #0D0D0D;
     --bg-secondary: #151515;
     --text-primary: #F5F1E8;
@@ -623,7 +623,8 @@ footer {
 
     /* Contact responsive */
     .contact-section {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
         padding: 3rem 1.5rem;
     }
 
@@ -695,6 +696,12 @@ footer {
     }
 
     .contact-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
         padding: 2rem 1rem;
+    }
+
+    .contact-map {
+        height: 250px;
     }
 }
