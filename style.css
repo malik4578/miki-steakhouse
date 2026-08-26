@@ -688,6 +688,7 @@ footer {
     }
 
     .menu-grid {
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
@@ -696,7 +697,7 @@ footer {
     }
 
     .contact-section {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 2rem 1rem;
     }
