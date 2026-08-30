@@ -1,7 +1,7 @@
 :root {
     --bglogo: #000000;
-    --gold: #b21a1a;
-    --gold-light: #b21a1a;
+    --gold: #e4ab35;
+    --gold-light: #e4ab35;
     --bg-dark: #0D0D0D;
     --bg-secondary: #151515;
     --text-primary: #F5F1E8;
@@ -251,8 +251,8 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem;
-    margin: 3rem 0;
-    max-width: 75%;
+    margin: 3rem auto;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -623,8 +623,7 @@ footer {
 
     /* Contact responsive */
     .contact-section {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr;
         padding: 3rem 1.5rem;
     }
 
@@ -688,7 +687,6 @@ footer {
     }
 
     .menu-grid {
-        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
@@ -697,12 +695,6 @@ footer {
     }
 
     .contact-section {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
         padding: 2rem 1rem;
-    }
-
-    .contact-map {
-        height: 250px;
     }
 }
