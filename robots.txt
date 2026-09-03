@@ -4,4 +4,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://www.aremplacer.com/sitemap.xml
+Sitemap: https://www.miki-steakhouse.fr/sitemap.xml
